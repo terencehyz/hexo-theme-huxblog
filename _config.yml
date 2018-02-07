@@ -3,63 +3,63 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kaijun's Blog
-subtitle: To Be A Lean Developer!
-author: Kaijun Chen
-language:
+title: Terence's Blog
+subtitle: Getting Better!
+author: Terence Han
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kaijun.rocks/hexo-theme-huxblog
-root: /hexo-theme-huxblog/
+url: https://hanyuzhou.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Kaijun的博客 | Kaijun's Blog
-header-img: img/home-bg.jpg
-email: Kaijun.cn@gmail.com
+SEOTitle: TerenceHan的博客 | 韩驭洲的博客
+header-img: /ooo.0o0.ooo/2017/01/29/588dac8407cf3.jpg #img/home-bg.jpg
+email: terencehyz@gmail.com
 description: ""
-keyword: ""
+keywords: 韩驭洲,terencehyz
 
 
 # SNS settings
-# RSS: false
-weibo_username:     Demonbane
-zhihu_username:     Demonbane
-github_username:    Kaijun
-twitter_username:   Demonbane_x
-facebook_username:  demonbane.cn
-linkedin_username:  kaijun-chen-42089354
+RSS: true
+weibo_username:     
+zhihu_username:     terence-han
+github_username:    terencehyz
+twitter_username:   woshihyz1996
+facebook_username:  
+linkedin_username:  驭洲-韩-953909136
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
 # Disqus settings
-disqus_username: hexo-theme-huxblog
+disqus_username: terencesblog
 
 # Duoshuo settings
 # duoshuo_username: kaijun
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: f26243fd92992dd114a711192915ea16
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-90359012-1'            # Format: UA-xxxxxx-xx
+ga_domain:  hanyuzhou.com
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "我要成为魔法师!"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "韩驭洲的博客"
+sidebar-avatar: "/ws4.sinaimg.cn/large/77ce63b1jw1fc25x1cr1tj20qo0zkgqt.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # Featured Tags
@@ -70,23 +70,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Kaijun's Blog",
-        href: "http://blog.kaijun.rocks"
-    },{
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
+        title: "IMUDGES",
+        href: "http://www.imudges.com/"
     }
 ]
 
@@ -140,12 +125,31 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+# RSS订阅
+plugin:
+- hexo-generator-feed
+# Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
 ## Themes: https://hexo.io/themes/
 theme: huxblog
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Kaijun/hexo-theme-huxblog
-  branch: gh-pages
+  branch: master
+  message: ":hammer: add ga_track"
+  repo: 
+    github: git@github.com:terencehyz/terencehyz.github.io.git,master
+    #coding: git@git.coding.net:terencehyz/terencehyz.git,master
+    #bitbucket: https://terencehyz@bitbucket.org/terencehyz/terencehyz.bitbucket.org.git

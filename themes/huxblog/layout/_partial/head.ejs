@@ -4,7 +4,11 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<%= config.description %>">
-    <meta name="keyword"  content="<%= config.keyword %>">
+    <% if (page.keywords){ %>
+    <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+    <% } else if (config.keywords){ %>
+    <meta name="keywords" content="<%= config.keywords %>">
+    <%} %>
     <link rel="shortcut icon" href="<%= config.root %>img/favicon.ico">
 
     <title>
@@ -29,7 +33,8 @@
     <!-- Custom Fonts -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
 
     <!-- Hux Delete, sad but pending in China
