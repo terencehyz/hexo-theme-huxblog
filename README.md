@@ -16,7 +16,7 @@ So i just pushed the whole hexo project for your convenience, all pre settings a
 ##### 1.Init
 
 ```
-git clone https://github.com/Kaijun/hexo-theme-huxblog.git
+git clone https://github.com/terencehyz/hexo-theme-huxblog.git
 cd hexo-theme-huxblog
 npm install
 ```
